@@ -17,11 +17,6 @@ function check_choice(userchoice) {
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-/* function generate_scramble(password) {
-  var split = password.split("")
-  var list = split.sort(() => Math.random() - 0.5)
-  return list.join("");
-} */
 
 // Write password to the #password input
 function writePassword() {
@@ -54,7 +49,7 @@ function writePassword() {
   var final_password = ""
   if (user_answer_5 <= 8 || user_answer_5 >= 128) {
     for (let i = 0; i < user_answer_5; i++) {
-      final_password += very_important_password [Math.floor(Math.random() * (very_important_password.length))]
+      final_password += very_important_password[Math.floor(Math.random() * (very_important_password.length))]
     }
     return final_password;
   }
