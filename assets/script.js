@@ -13,6 +13,7 @@ function check_choice(userchoice) {
 
 }
 
+const prompts = document.querySelector('#password');
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
