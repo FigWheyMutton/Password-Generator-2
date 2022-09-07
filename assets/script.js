@@ -52,8 +52,10 @@ function writePassword() {
     for (let i = 0; i < user_answer_5; i++) {
       final_password += very_important_password[Math.floor(Math.random() * (very_important_password.length))]
     }
-    return final_password;
+    document.getElementById("password").value = final_password;
   }
+  console.log(user_prompt_5);
+  console.log(user_answer_5);
 }
 
 // Add event listener to generate button
