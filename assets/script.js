@@ -48,7 +48,7 @@ function writePassword() {
     very_important_password = very_important_password + "~`!@#$%^&*()_-+={[}]|\:;\"'<,>.?/" // Checking if choice 2 is true
   }
   var final_password = ""
-  if (user_answer_5 <= 8 || user_answer_5 >= 128) {
+  if (user_answer_5 >= 8 && user_answer_5 >= 128) {
     for (let i = 0; i < user_answer_5; i++) {
       final_password += very_important_password[Math.floor(Math.random() * (very_important_password.length))]
     }
