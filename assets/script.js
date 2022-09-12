@@ -33,7 +33,7 @@ function writePassword() {
   var user_answer_2 = check_choice(user_prompt_2);
   var user_answer_3 = check_choice(user_prompt_3);
   var user_answer_4 = check_choice(user_prompt_4);
-  var user_answer_5 = check_choice(user_prompt_5);
+  var user_answer_5 = user_prompt_5;
   
   if (user_answer_1 === true) {
     very_important_password = very_important_password + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -48,7 +48,7 @@ function writePassword() {
     very_important_password = very_important_password + "~`!@#$%^&*()_-+={[}]|\:;\"'<,>.?/" // Checking if choice 2 is true
   }
   var final_password = ""
-  if (user_answer_5 >= 8 && user_answer_5 >= 128) {
+  if (user_answer_5 >= 8 && user_answer_5 <= 128) {
     for (let i = 0; i < user_answer_5; i++) {
       final_password += very_important_password[Math.floor(Math.random() * (very_important_password.length))]
     }
