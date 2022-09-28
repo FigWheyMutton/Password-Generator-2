@@ -7,11 +7,14 @@ function check_choice(userchoice) {
 
   } if (userchoice == "n" || userchoice== "no") {
     booleanfunc = false; // returns false if N
-
   }
   return booleanfunc; // Will return true or false (Y or N)
-
 }
+
+if (userchoice === null) {
+  return;
+}
+
 
 const prompts = document.querySelector('#password');
 
